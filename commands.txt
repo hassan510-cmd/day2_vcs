@@ -1,0 +1,630 @@
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d
+$ git clone https://github.com/hassan510-cmd/day2_vcs.git
+Cloning into 'day2_vcs'...
+warning: You appear to have cloned an empty repository.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d
+$ cd day2_vcs/
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (master)
+$ touch test_hassan.py
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (master)
+$ git add *
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (master)
+$ git commit -m "hassan first commit"
+[master (root-commit) 9b7d872] hassan first commit
+ Committer: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test_hassan.py
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 230 bytes | 19.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/hassan510-cmd/day2_vcs.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (master)
+$ git branch hasan_branch
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (master)
+$ git checkout hasan_branch
+Switched to branch 'hasan_branch'
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ touch from_hassan_branch.py
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git add *
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git commit -m "from hassan_branch"
+[hasan_branch 268279f] from hassan_branch
+ Committer: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 from_hassan_branch.py
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git push -u origin hasan_branch
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 274 bytes | 39.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'hasan_branch' on GitHub by visiting:
+remote:      https://github.com/hassan510-cmd/day2_vcs/pull/new/hasan_branch
+remote:
+To https://github.com/hassan510-cmd/day2_vcs.git
+ * [new branch]      hasan_branch -> hasan_branch
+Branch 'hasan_branch' set up to track remote branch 'hasan_branch' from 'origin'.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (master)
+$ git fetch --all
+Fetching origin
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 16 (delta 2), reused 16 (delta 2), pack-reused 0
+Unpacking objects: 100% (16/16), done.
+From https://github.com/hassan510-cmd/day2_vcs
+ * [new branch]      Arafa       -> origin/Arafa
+ * [new branch]      antonbranch -> origin/antonbranch
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (master)
+$ git checkout hasan_branch
+Switched to branch 'hasan_branch'
+Your branch is up to date with 'origin/hasan_branch'.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ touch 1.py
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git add *
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git commit -m "#1"
+[hasan_branch bdc312f] #1
+ Committer: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.py
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git push -u origin hasan_branch
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 239 bytes | 39.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/hassan510-cmd/day2_vcs.git
+   268279f..bdc312f  hasan_branch -> hasan_branch
+Branch 'hasan_branch' set up to track remote branch 'hasan_branch' from 'origin'.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ touch 2.py
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git add *
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git commit -m "#2"
+[hasan_branch b6009cd] #2
+ Committer: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2.py
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git push -u origin hasan_branch
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 234 bytes | 234.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/hassan510-cmd/day2_vcs.git
+   bdc312f..b6009cd  hasan_branch -> hasan_branch
+Branch 'hasan_branch' set up to track remote branch 'hasan_branch' from 'origin'.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ touch 3.py
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git add *
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git push -u origin hasan_branch
+Everything up-to-date
+Branch 'hasan_branch' set up to track remote branch 'hasan_branch' from 'origin'.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git commit -m "#3"
+[hasan_branch 9f28919] #3
+ Committer: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 3.py
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git push -u origin hasan_branch
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 236 bytes | 236.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/hassan510-cmd/day2_vcs.git
+   b6009cd..9f28919  hasan_branch -> hasan_branch
+Branch 'hasan_branch' set up to track remote branch 'hasan_branch' from 'origin'.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git log
+commit 9f289198430384110c4f9be7f0262b9973642fd0 (HEAD -> hasan_branch, origin/hasan_branch)
+Author: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Date:   Sat Aug 28 15:04:19 2021 +0200
+
+    #3
+
+commit b6009cd8618a4c9869d50a9be05f080314695739
+Author: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Date:   Sat Aug 28 15:03:37 2021 +0200
+
+    #2
+
+commit bdc312fee76326b0e0285ab5fb15c01e31f4bac8
+Author: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Date:   Sat Aug 28 15:01:00 2021 +0200
+
+    #1
+
+commit 268279fe3f1e6326a1318f7089919ac463cbb492
+Author: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Date:   Sat Aug 28 14:19:21 2021 +0200
+
+    from hassan_branch
+
+commit 9b7d87284468456081cda69f6ec6708657ec23b4 (origin/master, master)
+Author: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Date:   Sat Aug 28 14:15:32 2021 +0200
+
+    hassan first commit
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git revert ^C
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git log 268279fe3f1e6326a1318f7089919ac463cbb492
+commit 268279fe3f1e6326a1318f7089919ac463cbb492
+Author: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Date:   Sat Aug 28 14:19:21 2021 +0200
+
+    from hassan_branch
+
+commit 9b7d87284468456081cda69f6ec6708657ec23b4 (origin/master, master)
+Author: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Date:   Sat Aug 28 14:15:32 2021 +0200
+
+    hassan first commit
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git push -u origin hasan_branch
+Everything up-to-date
+Branch 'hasan_branch' set up to track remote branch 'hasan_branch' from 'origin'.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git revert 268279fe3f1e6326a1318f7089919ac463cbb492
+[hasan_branch 42fca4c] Revert "from hassan_branch"
+ Committer: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 from_hassan_branch.py
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git push -u origin hasan_branch
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 285 bytes | 142.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/hassan510-cmd/day2_vcs.git
+   9f28919..42fca4c  hasan_branch -> hasan_branch
+Branch 'hasan_branch' set up to track remote branch 'hasan_branch' from 'origin'.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git merge Arafa
+merge: Arafa - not something we can merge
+
+Did you mean this?
+        origin/Arafa
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git fetch -all
+error: did you mean `--all` (with two dashes ?)
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git fetch --all
+Fetching origin
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 16 (delta 7), reused 14 (delta 5), pack-reused 0
+Unpacking objects: 100% (16/16), done.
+From https://github.com/hassan510-cmd/day2_vcs
+   987ed62..10dec3d  Arafa       -> origin/Arafa
+   47b714a..4043bd9  antonbranch -> origin/antonbranch
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git merge Arafa
+merge: Arafa - not something we can merge
+
+Did you mean this?
+        origin/Arafa
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git merge origin/Arafa
+Merge made by the 'recursive' strategy.
+ index.html | 0
+ script.js  | 0
+ source.py  | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 script.js
+ create mode 100644 source.py
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git push -u origin hasan_branch
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 320 bytes | 320.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/hassan510-cmd/day2_vcs.git
+   42fca4c..9d11504  hasan_branch -> hasan_branch
+Branch 'hasan_branch' set up to track remote branch 'hasan_branch' from 'origin'.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ touch some_updates.js
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git add *
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git commit -m "some  updates"
+[hasan_branch 4eb981b] some  updates
+ Committer: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 some_updates.js
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git push -u origin hasan_branch
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 255 bytes | 255.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/hassan510-cmd/day2_vcs.git
+   9d11504..4eb981b  hasan_branch -> hasan_branch
+Branch 'hasan_branch' set up to track remote branch 'hasan_branch' from 'origin'.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git checkout Arafa
+Switched to a new branch 'Arafa'
+Branch 'Arafa' set up to track remote branch 'Arafa' from 'origin'.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (Arafa)
+$ git pull
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 11 (delta 5), reused 9 (delta 3), pack-reused 0
+Unpacking objects: 100% (11/11), done.
+From https://github.com/hassan510-cmd/day2_vcs
+   10dec3d..27b79d1  Arafa       -> origin/Arafa
+   4043bd9..ac09ab9  antonbranch -> origin/antonbranch
+Updating 10dec3d..27b79d1
+Fast-forward
+ .vs/slnx.sqlite       | Bin 0 -> 90112 bytes
+ from_hassan_branch.py |   0
+ indexhtmlanton.html   |   0
+ login.js              |   6 ++++++
+ script.js             |   1 +
+ 5 files changed, 7 insertions(+)
+ create mode 100644 .vs/slnx.sqlite
+ create mode 100644 from_hassan_branch.py
+ create mode 100644 indexhtmlanton.html
+ create mode 100644 login.js
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (Arafa)
+$ git checkout hasan_branch
+Switched to branch 'hasan_branch'
+Your branch is up to date with 'origin/hasan_branch'.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git log --oneline
+4eb981b (HEAD -> hasan_branch, origin/hasan_branch) some  updates
+9d11504 Merge remote-tracking branch 'origin/Arafa' into hasan_branch
+42fca4c Revert "from hassan_branch"
+10dec3d Revert "upload app.js 'Arafa'"
+a8597fd upload source.py 'Arafa'
+9f28919 #3
+76269f9 upload app.js 'Arafa'
+b6009cd #2
+d932890 script.js
+bdc312f #1
+987ed62 arafa's commit
+268279f from hassan_branch
+9b7d872 (origin/master, master) hassan first commit
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git revert 9b7d872
+[hasan_branch 9c1297a] Revert "hassan first commit"
+ Committer: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 test_hassan.py
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 281 bytes | 46.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/hassan510-cmd/day2_vcs.git
+   4eb981b..9c1297a  hasan_branch -> hasan_branch
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git log -n 5
+commit 9c1297ad37e566ea60f3986bd6856c7b13a777e5 (HEAD -> hasan_branch, origin/hasan_branch)
+Author: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Date:   Sat Aug 28 15:57:18 2021 +0200
+
+    Revert "hassan first commit"
+
+    This reverts commit 9b7d87284468456081cda69f6ec6708657ec23b4.
+
+commit 4eb981bf090b914c802cedf35198ac84a9991523
+Author: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Date:   Sat Aug 28 15:25:56 2021 +0200
+
+    some  updates
+
+commit 9d11504f8b809bda5a5cc247276fcf0c15f31abf
+Merge: 42fca4c 10dec3d
+Author: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Date:   Sat Aug 28 15:16:31 2021 +0200
+
+    Merge remote-tracking branch 'origin/Arafa' into hasan_branch
+
+commit 42fca4cf6268a2e9d11c66a09dbce95b28643aa2
+Author: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Date:   Sat Aug 28 15:08:39 2021 +0200
+
+    Revert "from hassan_branch"
+
+    This reverts commit 268279fe3f1e6326a1318f7089919ac463cbb492.
+
+commit 10dec3d34a178a59f18c0e96c584e57a3306db54
+Author: bruno-0 <bmagpul@gmail.com>
+Date:   Sat Aug 28 15:08:09 2021 +0200
+
+    Revert "upload app.js 'Arafa'"
+
+    This reverts commit 76269f94c1dc5f750c5f281827cc57ff949a7045.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git push -u origin hasan_branch
+Everything up-to-date
+Branch 'hasan_branch' set up to track remote branch 'hasan_branch' from 'origin'.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git revert 9b7d872
+On branch hasan_branch
+Your branch is up to date with 'origin/hasan_branch'.
+
+nothing to commit, working tree clean
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git add *
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git commit -m "hassan conflict"
+[hasan_branch 0892d4c] hassan conflict
+ Committer: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git push -u origin hasan_branch
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 315 bytes | 315.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/hassan510-cmd/day2_vcs.git
+   9c1297a..0892d4c  hasan_branch -> hasan_branch
+Branch 'hasan_branch' set up to track remote branch 'hasan_branch' from 'origin'.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git pull
+remote: Enumerating objects: 53, done.
+remote: Counting objects: 100% (44/44), done.
+remote: Compressing objects: 100% (21/21), done.
+remote: Total 34 (delta 9), reused 30 (delta 5), pack-reused 0
+Unpacking objects: 100% (34/34), done.
+From https://github.com/hassan510-cmd/day2_vcs
+   0892d4c..06ff506  hasan_branch -> origin/hasan_branch
+   27b79d1..cc5cf9f  Arafa        -> origin/Arafa
+   ac09ab9..5fc770e  antonbranch  -> origin/antonbranch
+ * [new branch]      arafa        -> origin/arafa
+Updating 0892d4c..06ff506
+Fast-forward
+ .idea/.gitignore   |   2 ++
+ .idea/day2_vcs.iml |   9 +++++++++
+ .idea/modules.xml  |   8 ++++++++
+ .idea/vcs.xml      |   6 ++++++
+ .vs/slnx.sqlite    | Bin 0 -> 90112 bytes
+ 1.py               |   2 +-
+ 3.py               |   3 +++
+ 7 files changed, 29 insertions(+), 1 deletion(-)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/day2_vcs.iml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 .vs/slnx.sqlite
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git add *
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git commit -m "hassan's conflict"
+[hasan_branch eb2c51a] hassan's conflict
+ Committer: HassanMahmoud <sci.hassanmahmoud.2018@alexu.edu.eg>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$ git push -u
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 318 bytes | 318.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/hassan510-cmd/day2_vcs.git
+   06ff506..eb2c51a  hasan_branch -> hasan_branch
+Branch 'hasan_branch' set up to track remote branch 'hasan_branch' from 'origin'.
+
+AzureAD+HassanMahmoud@DESKTOP-D463M19 MINGW64 /d/day2_vcs (hasan_branch)
+$
