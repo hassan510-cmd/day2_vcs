@@ -1,0 +1,3 @@
+function antonsamir (){
+	// conflict 
+}
